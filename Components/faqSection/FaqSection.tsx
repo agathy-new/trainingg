@@ -79,10 +79,10 @@ export default function FaqSection() {
               ))}
             </Accordion.Root>
 
-            <div className="mt-10">
+            <div className="text-center mt-10">
               <a
                 href={faqSectionData.cta.href}
-                className="inline-flex items-center gap-2 rounded-full border border-primary px-8 py-3 text-primary font-medium hover:bg-primary hover:text-white transition"
+                className="inline-flex items-center gap-2 px-6 py-2 rounded-full border border-primary px-8 py-3 text-primary text-[12px] hover:bg-primary hover:text-white transition"
               >
                 {faqSectionData.cta.text}
                 →

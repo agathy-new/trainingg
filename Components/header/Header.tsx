@@ -23,7 +23,7 @@ export default function Header() {
          
           <div className="flex flex-col flex-1 justify-between  ">
             <TopBar />
-            <div className="mt-6"> 
+            <div className="mt-4"> 
               <NavBar />
             </div>
           </div>

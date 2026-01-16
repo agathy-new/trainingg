@@ -27,7 +27,7 @@ export default function NavBar() {
 
   return (
     <nav>
-      <div className="max-w-7xl mx-auto px-4 py-2 flex justify-end">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex justify-end  ">
         <ul className="flex gap-10 items-center">
           {navItems.map((item) => {
             const active = pathname === item.href;

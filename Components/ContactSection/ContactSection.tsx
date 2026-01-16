@@ -42,32 +42,41 @@ export default function ContactSection() {
 
           {/* LEFT */}
          
-          <div  data-aos="fade-right" >
-            
-            <p className="text- uppercase text-sm text-accent font-medium mb-3">
-              {contactSectionData.sectionLabel}
-            </p>
-            <h2 className="text-4xl font-semibold text-primary mb-10">
-              {contactSectionData.heading}
-            </h2>
+       {/* LEFT */}
+<div data-aos="fade-right" className="pl-8"> 
+  <p className="text-uppercase text-sm text-accent font-medium mb-3">
+    {contactSectionData.sectionLabel}
+  </p>
 
-            <div className="space-y-6">
-            {contactSectionData.info.map((item, i) => {
-  return (
-    <div key={i} className="flex gap-4 items-center">
-<div className="w-[45px] h-[45px] rounded-full bg-accent  flex items-center justify-center overflow-hidden shrink-0 flex-none">
-  <img src={item.icon} alt={item.label + " icon"} className="w-6 h-6 object-contain" />
+  <h2 className="text-4xl font-semibold uppercase text-primary mb-10">
+    {contactSectionData.heading}
+  </h2>
+
+  <div className="space-y-6">
+    {contactSectionData.info.map((item, i) => {
+      return (
+        <div key={i} className="flex gap-4 items-center">
+
+          {/* ICON */}
+          <div className="w-[45px] h-[45px] rounded-full bg-accent flex items-center justify-center overflow-hidden shrink-0 flex-none">
+            <img
+              src={item.icon}
+              alt={item.label + ' icon'}
+              className="w-6 h-6 object-contain"
+            />
+          </div>
+
+          {/* TEXT */}
+          <div className="max-w-[220px]"> 
+            <p className="text-primary text-[15px]">{item.value}</p>
+          </div>
+
+        </div>
+      );
+    })}
+  </div>
 </div>
 
-      <div>
-        <p className="text-primary">{item.value}</p>
-      </div>
-    </div>
-  );
-})}
-
-            </div>
-          </div>
 
           {/* RIGHT – FORM */}
         <form
@@ -112,7 +121,7 @@ data-aos="fade-left"
     }
 
    if (field.type === "select") {
-  // سنضيف state للاختيار الحالي
+  
   const [selectedValue, setSelectedValue] = useState("");
 
   return (
@@ -129,7 +138,7 @@ data-aos="fade-left"
         <img
           src="/Contact/arrow-down.png"
           alt="Dropdown Arrow"
-          className="w-4 h-4 ml-2"
+          // className="w-4 h-4 ml-2"
         />
       </button>
 
@@ -228,7 +237,7 @@ data-aos="fade-left"
   <button
     type="submit"
     disabled={isSubmitting}
-    className="w-full bg-primary text-white py-4 rounded-xl font-medium hover:bg-opacity-90 transition disabled:opacity-50"
+    className="w-full bg-primary text-white py-4 rounded-xl font-medium  transition disabled:opacity-50"
   >
     {isSubmitting ? "Sending..." : contactSectionData.submitText}
   </button>

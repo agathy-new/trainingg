@@ -3,7 +3,7 @@
 export type ContactInfoItem = {
   label: string;
   value: string;
-  icon: string;  // نغيير النوع من { "email" | "phone" | "location" } إلى string للمسار
+  icon: string; 
 };
 
 export type ContactFormField = {
@@ -12,6 +12,12 @@ export type ContactFormField = {
   type: string;
   placeholder?: string;
   required?: boolean;
+
+  
+  options?: { value: string; label: string }[];
+
+  
+  rows?: number;
 };
 
 export type ContactSectionData = {

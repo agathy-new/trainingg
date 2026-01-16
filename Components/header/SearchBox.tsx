@@ -23,8 +23,8 @@ export default function SearchBox() {
     <motion.form
       className="flex items-center border border-accent rounded-full overflow-hidden"
       animate={{
-        width: open ? 280 : 150,
-        height: 45,
+        width: open ? 300 : 170,
+        height: 40,
         paddingLeft: 12,
         paddingRight: 12,
       }}

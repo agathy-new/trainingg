@@ -36,17 +36,14 @@ export default function Home() {
 >
   <div className="absolute inset-0 bg-[#e0f7fa]/30 z-0"></div>
 
-  <div className="relative z-10 w-full px-12 py-20">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 max-w-[1200px] mx-auto">
-      <div className="max-w-[400px]">
+  <div className="relative z-10 w-full px-12 py-24">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 max-w-[1200px] mx-auto mt-10">
+      <div className="max-w-[400px] px-4">
         <PortfolioLeft />
       </div>
       <PortfolioRight />
     </div>
-
-    <div className="mt-20 bg-[#172B6B99]/10 w-full ">
-      <CommunitiesSlider />
-    </div>
+<div className="mt-28 bg-[#172B6B99]/30 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"> <CommunitiesSlider /> </div>
   </div>
 </section>
 

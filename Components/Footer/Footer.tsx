@@ -77,7 +77,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-white/20 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
 
-          <p className="text-xs opacity-70">
+          <p className="text-xs ">
             {footerData.copyright}
           </p>
 

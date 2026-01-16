@@ -70,7 +70,7 @@ export default function StrataSection() {
                       )}
                     </p>
 
-                    <p className="mt-2 font-bold text-primary/80 max-w-[140px] mx-auto break-words">
+                    <p className="mt-2 font-bold text-primary/80 max-w-[170px] mx-auto break-words">
                       {stat.label}
                     </p>
                   </div>

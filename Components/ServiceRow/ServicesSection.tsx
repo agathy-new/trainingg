@@ -11,7 +11,7 @@ export default function ServicesSection() {
   }, []);
 
   return (
-<section className="py-24 w-full bg-[#e0f7fa]/30 ">
+<section className="py-24 w-full bg-[#e0f7fa]/50 ">
   {/* الحاوية الداخلية */}
  <div className="w-full max-w-7xl mx-auto pl-10 pr-4">
 

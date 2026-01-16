@@ -44,7 +44,7 @@ export const faqSectionData: FaqSectionData = {
   ],
 
   cta: {
-    text: "View All FAQ",
+    text: "View All FAQ   ",
     href: "/faq",
   },
     backgroundImage: "/faq/FAQ.svg",

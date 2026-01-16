@@ -7,7 +7,7 @@ const portfolioLeftData = {
     prev: "/portfolio/arrow1.svg", // سهم السابق
     next: "/portfolio/arrow2.svg", // سهم التالي
   },
-  buttonText: "View All Our Towers",
+  buttonText: "View All Our Towers  ",
   buttonLink: "/towers", // رابط الزر
 };
 
