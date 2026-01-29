@@ -11,7 +11,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+--font-sans: "Avenir", sans-serif;
+
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,11 +23,14 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+   body {
+     font-family: "Avenir", sans-serif;
+     background: var(--background);
+     color: var(--foreground);
+   }
+   
+
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -35,3 +39,41 @@ body {
   -ms-overflow-style: none; /* IE */
   scrollbar-width: none; /* Firefox */
 }
+.react-international-phone-country-selector-button {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* إخفاء خلفية select */
+.PhoneInputCountrySelect:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* إخفاء input الداخلي */
+.PhoneInputInput {
+  display: none !important;
+}
+
+/* منع القائمة من الظهور داخل الحقل */
+.PhoneInputCountrySelect {
+  position: relative !important;
+  z-index: 50 !important;
+}
+
+/* جعل القائمة المنسدلة فوق الحقل وليس داخله */
+.PhoneInputCountrySelect option {
+  background: white !important;
+  color: black !important;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/Avenir-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+

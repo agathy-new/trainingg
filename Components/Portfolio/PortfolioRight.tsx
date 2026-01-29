@@ -23,12 +23,12 @@ export default function PortfolioRight() {
     const diff = e.clientX - startX;
 
     if (diff > 50) {
-      // سحب لليمين → السلايد السابق
+    
       const controller = setSwiperController as any;
       controller()?.slidePrev?.();
       setIsDragging(false);
     } else if (diff < -50) {
-      // سحب لليسار → السلايد التالي
+      
       const controller = setSwiperController as any;
       controller()?.slideNext?.();
       setIsDragging(false);
@@ -41,9 +41,10 @@ export default function PortfolioRight() {
 
   return (
     <div
-      className="w-full relative pr-20"
+      className="w-full relative xs:pl-3 sm:px-6  lg:py-16 py-16 "
       data-sal="slide-left"
       data-sal-duration="1200"
+      
     >
       <Swiper
         onSwiper={(swiper) => {
@@ -52,32 +53,54 @@ export default function PortfolioRight() {
             slidePrev: () => swiper.slidePrev(),
           });
         }}
-        spaceBetween={11}
-        slidesPerView={1.05}
+        
+       
         centeredSlides={false}
         loop={true}
+         breakpoints={{
+    468: {
+      spaceBetween: 10,
+ slidesPerView:1.4,
+    },
+  
+    768: {
+      spaceBetween: 10,
+      slidesPerView:2.25,
+    },
+      992: {
+      spaceBetween: 10,
+      slidesPerView:3,
+    },
+    1200: {
+      spaceBetween: 3,
+       slidesPerView:1.01,
+    },
+    1400: {
+      spaceBetween: 3,
+        slidesPerView:1.01,
+    },
+  }}
         className="w-full"
       >
         {portfolioRightData.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="overflow-hidden w-[450px] h-[750px] mx-auto">
-           <img
+            <div className="overflow-hidden w-full ">
+<img
   src={item.image}
   alt={item.title}
-  width={800}   // زيادة العرض
-  height={560}
-  className="w-[700px] h-[560px] object-cover rounded-[40px] mx-auto"
+  className="lg:w-[590px] lg:h-[590px] xs:w-[280px] xs:h-[390px]   md:w-[280px] md:h-[590px] object-cover rounded-[40px]"
 />
+
 
 
               {/* المنطقة القابلة للسحب */}
               <div
-                className="pt-8 px-0 select-none"
+                className="pt-6 select-none  xs:w-[280px] lg:w-[590px] "
                 onDoubleClick={handleDoubleClick}
                 onMouseMove={handleMouseMove}
                 onMouseUp={handleMouseUp}
               >
-                <p className="text-primary/80 font-bold text-3xl mt-6">
+                <p className="text-primary/80 font-bold text-3xl mt-4">
                   {item.title}
                 </p>
                 <p className="text-accent text-lg mt-2">{item.category}</p>

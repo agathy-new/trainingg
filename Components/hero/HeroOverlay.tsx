@@ -24,7 +24,7 @@ export default function HeroOverlay({ slides, active }: HeroOverlayProps) {
           {current.title}
         </h1>
 
-        <p className="mt-4 text-sm tracking-wide">
+        <p className=" text-sm tracking-wide mt-10">
           {current.subtitle}
         </p>
 
@@ -35,9 +35,10 @@ export default function HeroOverlay({ slides, active }: HeroOverlayProps) {
               key={slide.id}
               className={clsx(
                 "rounded-full overflow-hidden transition-all duration-500",
-                index === active
-                  ? "w-24 h-24 border-2 border-accent"
-                  : "w-16 h-16 opacity-60"
+               index === active
+  ? "w-24 h-24 ring-2 ring-accent ring-offset-2"
+  : "w-16 h-16 opacity-60"
+
               )}
             >
               <Image

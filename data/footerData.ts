@@ -26,11 +26,11 @@ export const footerData = {
     ],
   ],
 
-  social: [
-    { name: "Instagram", href: "#", icon: "instagram" },
-    { name: "Facebook", href: "#", icon: "facebook" },
-    { name: "LinkedIn", href: "#", icon: "linkedin" },
-  ],
+ social: [
+  { name: "Instagram", href: "#", src: "/footer/instagram.svg" },
+  { name: "Facebook", href: "#", src: "/footer/facebook.svg" },
+  { name: "LinkedIn", href: "#", src: "/footer/linkedin.svg" },
+],
 
   copyright: "Copyright © Strata Global @2025",
 };

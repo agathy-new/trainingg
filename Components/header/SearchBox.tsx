@@ -23,7 +23,7 @@ export default function SearchBox() {
     <motion.form
       className="flex items-center border border-accent rounded-full overflow-hidden"
       animate={{
-        width: open ? 300 : 170,
+        width: open ? 300 : 200,
         height: 40,
         paddingLeft: 12,
         paddingRight: 12,
@@ -42,7 +42,7 @@ export default function SearchBox() {
         placeholder="Search"
         onFocus={handleFocus}
         onBlur={handleBlur}
-        className="flex-1 bg-transparent outline-none text-sm text-primary placeholder:text-primary/60"
+        className="flex-1 bg-transparent outline-none text-sm text-primary placeholder:text-primary px-4"
         style={{
           opacity: open ? 1 : 0.7,
         }}

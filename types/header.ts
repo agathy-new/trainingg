@@ -1,7 +1,13 @@
+export type NavDropdownItem = {
+  label: string;
+  href: string;
+};
+
 export type NavItem = {
   id: number;
   label: string;
   href: string;
+  dropdown?: NavDropdownItem[]; // اختياري
 };
 
 export type HeaderData = {
@@ -9,6 +15,7 @@ export type HeaderData = {
     src: string;
     alt: string;
   };
+
   actions: {
     search: {
       placeholder: string;
@@ -18,5 +25,6 @@ export type HeaderData = {
       href: string;
     };
   };
+
   navigation: NavItem[];
 };
