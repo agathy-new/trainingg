@@ -24,7 +24,7 @@ export default function StrataSection() {
    <div className="row flex flex-wrap">
 
   {/* القسم الأيسر */}
-  <div data-aos="fade-right" className="w-full sm:w-1/2 px-4 mb-8 sm:mb-0">
+  <div data-aos="fade-right" className="w-full sm:w-1/2  mb-8 sm:mb-0">
     <div className="abouttitle mb-8">
       <h2 className="text-[34px] uppercase leading-[1.3] font-bold text-primary mb-4">
         {strataStats.title}

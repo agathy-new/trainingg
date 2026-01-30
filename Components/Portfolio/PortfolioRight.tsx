@@ -53,9 +53,7 @@ export default function PortfolioRight() {
             slidePrev: () => swiper.slidePrev(),
           });
         }}
-        
-       
-        centeredSlides={false}
+          centeredSlides={false}
         loop={true}
          breakpoints={{
     468: {
@@ -90,10 +88,7 @@ export default function PortfolioRight() {
   alt={item.title}
   className="lg:w-[590px] lg:h-[590px] xs:w-[280px] xs:h-[390px]   md:w-[280px] md:h-[590px] object-cover rounded-[40px]"
 />
-
-
-
-              {/* المنطقة القابلة للسحب */}
+  {/* المنطقة القابلة للسحب */}
               <div
                 className="pt-6 select-none  xs:w-[280px] lg:w-[590px] "
                 onDoubleClick={handleDoubleClick}

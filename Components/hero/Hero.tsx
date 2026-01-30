@@ -110,8 +110,8 @@ export default function Hero() {
                       return (
                         <div
                           key={index}
-                          className={`h-[6px] rounded-full transition-all duration-300 ${
-                            isActive ? "w-16 bg-accent" : "w-6 bg-white/50"
+                          className={`h-[10px] rounded-full transition-all duration-500  ${
+                            isActive ? "w-[60px] bg-white" : "w-[10px] bg-white"
                           }`}
                         />
                       );

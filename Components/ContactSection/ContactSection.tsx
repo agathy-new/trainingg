@@ -12,7 +12,6 @@ import "aos/dist/aos.css";
 type FormValues = {
   [key: string]: string;
 };
-
 const icons = {
   email: Mail,
   phone: Phone,
@@ -46,7 +45,7 @@ const [submitted, setSubmitted] = useState(false);
   return (
     <section className="bg-[#F1F6FF] py-28 ">
       <div className="container mx-auto ">
-        <div className="flex flex-col sm:flex-row  sm:gap-8 md:gap-16 md:px-[12px] xs:px-4 sm:px-4 lg:gap-22  ">
+        <div className="flex flex-col sm:flex-row xs:gap-8 sm:gap-8 md:gap-16 md:px-[12px] xs:px-4 sm:px-4 lg:gap-22  ">
    {/* LEFT */}
 <div data-aos="fade-right" className="sm:pl-4   sm:w-[276px] md:w-[376px] lg:w-[451px] xl:w-[526px]"> 
   <p className="uppercase text-[16px] text-accent  mb-2">
